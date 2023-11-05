@@ -33,6 +33,8 @@ function guessNumber(){
         answer = "Число меньше вказаного!";
     } else if (enteredNumber < randomNum) {
         answer = "Число більше вказаного!";
+    } else if (isNaN(enteredNumber)) {
+        answer = "Для початку роботи потрібно ввести число"
     }
     console.log(answer);
     document.getElementById("text").innerHTML = answer;
