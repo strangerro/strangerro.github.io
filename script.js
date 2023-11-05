@@ -30,9 +30,9 @@ function guessNumber(){
         answer = "Вы вгадали число! Сторінка буде автоматично перезавантажена через 15 секунд!";
             reloadPage();
     } else if (enteredNumber > randomNum) {
-        answer = "Число меньше вказаного!";
+        answer = "Задане число меньше вказаного!";
     } else if (enteredNumber < randomNum) {
-        answer = "Число більше вказаного!";
+        answer = "Задане число більше вказаного!";
     } else if (isNaN(enteredNumber)) {
         answer = "Для початку роботи потрібно ввести число";
     }
